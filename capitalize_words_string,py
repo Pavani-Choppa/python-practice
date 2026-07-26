@@ -1,0 +1,13 @@
+sentence = input().strip()
+# Capitalize the first letter of each word
+print(sentence.title())
+
+
+# Another method by uing Loops
+sentence = input().strip()
+words = sentence.split()
+
+# Capitalize the first letter of each word
+for i in range(len(words)):
+  words[i] = words[i][0].upper()+words[i][1:]
+print(" ".join(words))
